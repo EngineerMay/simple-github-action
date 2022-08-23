@@ -1,1 +1,9 @@
-fdfdf
+name: Run Shell Commands
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a string
+        run: echo "Hello Mayank. This is our first github action file"
